@@ -1,0 +1,21 @@
+footer{
+background-color: black;
+bottom: 0;
+width: 100%;
+left: 0;
+
+  text-align:center;
+height: 50px;
+position: fixed;
+  background-color: #24252A;
+
+  padding: 13px 0;
+
+}
+
+
+.logofooter{
+  color: #f5f5f5;
+  font-family: 'Teko', sans-serif;
+  font-size: 19px;
+}

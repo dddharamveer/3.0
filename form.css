@@ -1,0 +1,26 @@
+.bgcolor{
+  background-color: rgb(227, 239, 245);
+}
+
+
+.mycol{
+  border: 3px groove rgb(206, 42, 42) ;
+  background-color:lightgrey;
+  border-radius: 5px;
+}
+.mycon{
+  margin:50px 10px 0px 10px;
+}
+
+
+.navbarform{
+  width: 100%;
+  background-color: lightgrey;
+  opacity: 70%;
+  height:10px;
+}
+
+.navbar-custom{
+  height: 45px;
+background-color:#0097a7 !important;
+}
