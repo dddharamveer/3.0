@@ -4,49 +4,45 @@
 
 ?>
 
+<div class="searchpage">
+  <div class="formsearch">
+    <form action="" method="post">
+      <div class="nametagsearch"><a> search students data</a></div>
+      <div class="namelable">
+        <label for="textforname">Name</label>
 
-<div class="container">
-    <br>
+        <input type="text" id="textforname" name="search1" />
+      </div>
+      <div class="urn">
+        <label for="urnsearch">U.r.n</label>
+        <input type="text" id="urnsearch" />
+      </div>
 
-<form action="" method="post" >
-    <div class="form-group row" >
-
-            <label for="nametx"   class="col-sm-2 col-form-label" >name:</label>
-        <div class="col-sm-10" >
-        <input type="text" name="search1" class="form-control" id="nametx"   >
-</div>
-   </div>
-   <div class="form-group row" >
-   <label for="inputde" class="col-sm-2 col-form-label">department:</label>
-   <div class="col-sm-10">
-   <select name="depart" class="form-control " id="inputde">
-                       <option value="">select</option>
-                       <option value="IT">IT</option>
-                       <option value="CSE">CSE</option>
-                       <option value="ME">ME</option>
-                            </select>
-</div>
-</div>
-<div class="form-group row">
-<label class="col-sm-2 col-form-label" ></label>
-    <div class="col-sm-10">
-
-    <input type="submit" name="submit" value="Search" class="btn btn-primary">
-</div>
-</div>
-</form>
-
-</div>
-<table class=' table table-striped table-hover'>
-    <thead>
+      <div class="departmentlable">
+        <label for="department" class="depart1">department</label>
+        <select name="depart" id="department">
+          <option value="">select</option>
+          <option value="IT">IT</option>
+          <option value="CSE">CSE</option>
+          <option value="ME">ME</option>
+        </select>
+      </div>
+      <div class="buttonsearch">
+        <button type="submit" name="submit" value="Search">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div class="tablesearch">
+    <table>
+      <thead>
         <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>department</th>
-                        </tr>
-                              </thead>
-        <tbody>
-       <?php
+          <th>id</th>
+          <th>name</th>
+          <th>department</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
        include 'DBController.php';
            if(isset($_POST["submit"])){
             $search_value=$_POST["search1"];
@@ -58,51 +54,47 @@
                                 {
                                      $sql="select * from  search where name like '%$search_value%'AND department like '%$depart%'  ";
 
-                                $res=$conn->query($sql);
-
-                                                    }
-
-
-
-
-
-           if(mysqli_num_rows($res)>0){
-                                              while($row=$res->fetch_assoc()){
-                                                                      $id=$row["id"];
-                                                                      $name=$row["name"];
-                                                                      $department=$row["department"];
-                                                                          ?>
-                                                                          <tr>
-                                                                             <td><?php echo $id; ?> </td>
-                                                                             <td><?php echo $name; ?> </td>
-                                                                             <td><?php echo $department; ?> </td>
-
-                                                                                 </tr>
+                                $res=$conn->query($sql); } else{ ?>
+        <tr>
+          <td>NO RECORDS FOUND</td>
+          <td>NO RECORDS FOUND</td>
+          <td>NO RECORDS FOUND</td>
+        </tr>
+        <?php
+                            exit();
+                        }
 
 
 
+           if(mysqli_num_rows($res)>0){ while($row=$res->fetch_assoc()){
+        $id=$row["id"]; $name=$row["name"]; $department=$row["department"]; ?>
+        <tr>
+          <td><?php echo $id; ?></td>
+          <td><?php echo $name; ?></td>
+          <td><?php echo $department; ?></td>
+        </tr>
 
-<?php
+        <?php
                                                                               }
 
 
                                                                   }
                                            else{
                                                  ?>
-                                                 <tr>
-                                                     <th>NO RECORDS FOUND</th>
-                                           </tr>
-                                                 <?php
+        <tr>
+          <td>NO RECORDS FOUND</td>
+          <td>NO RECORDS FOUND</td>
+          <td>NO RECORDS FOUND</td>
+        </tr>
+        <?php
 
                                                }
                                             }
  ?>
-                        </tbody>
-                                      </table>
-
-
-
-
+      </tbody>
+    </table>
+  </div>
+</div>
 <?php
 include"footer.html";
 ?>

@@ -1,0 +1,215 @@
+.searchpage {
+  height: 900px;
+  width: 100%;
+  background-color: #151515;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(63,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2337f2ff'/%3E%3Cstop offset='1' stop-color='%238832ff'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(119,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='11.219999999999999'%3E%3Cpath transform='translate(-85.05 6) rotate(0.15000000000000036 1409 581) scale(0.9641919999999999)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='3.74' transform='translate(-99 63) rotate(6.8999999999999995 800 450) scale(1.00776)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(18.3 -81) rotate(57 401 736) scale(1.00776)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='3.4'%3E%3Cpath transform='translate(378 -1.1999999999999993) rotate(0.2999999999999998 150 345) scale(0.9840639999999999)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='7.48' transform='translate(-120 -169.5) rotate(54 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-243.6 68.4) rotate(8.999999999999998 1400 132) scale(0.88)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.formsearch {
+  margin: 0px 300px;
+}
+
+.formsearch form {
+  position: relative;
+  top: 83px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: black solid 2px;
+  padding: 50px 75px;
+  background-color: #0000007c;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 41px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 41px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 41px -6px rgba(0, 0, 0, 0.75);
+}
+.nametagsearch {
+  margin-top: -30px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.nametagsearch a {
+  font-size: 25px;
+}
+.namelable {
+  height: 20px;
+}
+label {
+  margin-top: 25px;
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  float: left;
+}
+
+.departmentlable {
+  margin-top: 30px;
+  height: 20px;
+}
+
+.departmentlable select {
+  margin-top: 25px;
+  float: right;
+  height: 30px;
+  text-align: center;
+  width: 200px;
+}
+
+.urn {
+  margin-top: 30px;
+  height: 20px;
+}
+
+.formsearch form input {
+  margin-top: 25px;
+  float: right;
+  height: 30px;
+  width: 200px;
+  background-color: #15151500;
+  border: 2px rgb(190, 187, 187) solid;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  font-size: 22px;
+  font-family: "Teko", sans-serif;
+}
+
+.formsearch form input:focus {
+  border: 2px #feb062 solid;
+  outline: none;
+}
+
+.buttonsearch {
+  width: 100%;
+
+  margin-top: 60px;
+  text-align: center;
+}
+
+.buttonsearch button {
+  height: 38px;
+  width: 85px;
+  font-family: "Teko", sans-serif;
+  border: none;
+  border-radius: 2px;
+  font-size: 20px;
+  background-color: #feb062;
+}
+
+.buttonsearch button:hover {
+  cursor: pointer;
+  background-color: #feb062be;
+}
+
+.tablesearch {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  top: 100px;
+}
+.tablesearch table {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  width: 1000px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  -webkit-box-shadow: 15px 23px 36px 3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 15px 23px 36px 3px rgba(0, 0, 0, 1);
+  box-shadow: 15px 23px 36px 3px rgba(0, 0, 0, 1);
+}
+.tablesearch table thead tr {
+  background-color: #feb062;
+  color: black;
+  text-transform: uppercase;
+
+  text-align: start;
+}
+
+.tablesearch th,
+.tablesearch td {
+  padding: 20px 20px;
+}
+
+.tablesearch tbody tr {
+  border-bottom: black 2px solid;
+}
+.tablesearch tbody tr:nth-of-type(even) {
+  background-color: #e8ffe8;
+}
+
+.tablesearch tbody tr:hover {
+  background-color: #e8ffe8b6;
+  cursor: pointer;
+}
+
+.tablesearch tbody tr:nth-of-type(odd) {
+  background-color: #f5eded;
+}
+.tablesearch tbody tr:last-of-type {
+  border-bottom: black solid 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .formsearch {
+    margin: 0 30px;
+  }
+  .formsearch form {
+    top: 130px;
+    padding: 50px 25px;
+    height: 300px;
+  }
+
+  .tablesearch table {
+    width: 200px;
+  }
+
+  .formsearch form input {
+    width: 150px;
+  }
+
+  .formsearch form select {
+    width: 150px;
+  }
+  .tablesearch {
+    top: 150px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .formsearch {
+    margin: 0 10px;
+  }
+  .formsearch form {
+    top: 150px;
+  }
+}
+@media screen and (max-width: 1054px) {
+  .formsearch {
+    margin: 0 150px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .formsearch {
+    margin: 0 50px;
+  }
+
+  .formsearch form {
+    top: 125px;
+  }
+  .tablesearch {
+    top: 150px;
+  }
+  .tablesearch table {
+    width: 85%;
+  }
+}

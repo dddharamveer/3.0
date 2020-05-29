@@ -1,0 +1,54 @@
+.allstudentdata {
+  position: relative;
+  height: 200vh;
+  width: 100%;
+  top: 62px;
+
+  background-color: #0d0d00;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23a25d44' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23a685a9' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23ae4943' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23a172a4' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23b93653' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23985c9b' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23bc1767' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23994e9b' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23bd0286' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%238e328f' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa02aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.allstudentdata table {
+  width: 100%;
+  font-family: "Teko", sans-serif;
+  border-collapse: collapse;
+}
+.allstudentdata table thead {
+  position: sticky;
+  top: 62px;
+}
+
+.allstudentdata table thead tr {
+  background-color: #24252a;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.allstudentdata th,
+.allstudentdata td {
+  padding: 20px 20px;
+}
+
+.allstudentdata tbody tr {
+  text-align: center;
+  background-color: #0e153aa6;
+
+  color: white;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 750px) {
+  .allstudentdata {
+    overflow-x: auto;
+    top: 0px;
+  }
+  .allstudentdata table {
+    top: 0px;
+  }
+}
